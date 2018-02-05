@@ -1,0 +1,155 @@
+.col-md-2{
+      background-color: #52527a;
+      }
+
+    .menu{
+      
+      height: 5vh;
+      width: 100%;
+    }
+
+    .logo-desktop{
+      display: none;
+    }
+
+    .logo-mobile{
+      display: block;
+      width: 20%;
+      height: inherit;
+      text-align:left;
+      float:left; 
+    }
+
+    .iconbar{
+      width: 60%;
+      height: inherit;
+      margin:  auto;
+      float:left;
+    }
+
+    .icone{
+      width: 33.3%;
+      height: inherit;
+      float:left;
+      text-align:center; 
+    }
+
+    .botao{
+      width: 20%;
+      height: inherit;
+      text-align:center;
+      float: left; 
+    }
+
+    .icone a{
+      width: 100%;
+      float: left;
+      margin: 0 auto; 
+      height: inherit;
+      transition: all 0.7s ease;  
+    }
+
+    .icone a:hover{
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .imagem{
+        height: 95%;
+        padding: 2%;
+      }
+
+    .tabelas{
+      height: 300px;
+      padding-left: 20px;
+      overflow: auto;
+      color: #fff;
+    }
+
+    .fonte{
+      height: 30px;
+    }
+
+    .query{
+     height: 600px; 
+    }
+
+    #editor {
+    height: inherit;
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+
+    .resultado{
+      height: 400px;
+      overflow: auto;
+      border: 2px solid #ccc;
+    }
+
+
+
+
+     @media screen and (min-width: 768px) {
+      .col-md-2{
+      height: 100vh;
+      }
+      
+      .menu{
+        height: 200px;
+        width: inherit;
+      }
+
+      .logo-desktop{
+        display: block;
+        padding: 5%;
+      }
+
+      .logo-mobile{
+        display: none;
+      }
+
+      .iconbar{
+        width: 100%;
+        height: 35px;
+        margin-top: 50px;
+      }
+
+      .iconbar a{
+        height: 100%;
+        text-align: center;
+        height: inherit;
+        transition: all 0.7s ease;  
+      }
+
+      .botao{
+        display: none;
+      }
+
+      .imagem{
+        height: 100%;
+      }
+
+      .tabelas{
+        margin-top: 10px;
+      }
+
+      .fonte{
+        height: 5vh;
+      }
+
+      .query{
+        height: 60vh;
+      }
+
+      #editor {
+        height: inherit;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      .resultado{
+      height: 35vh;
+      }
+
+    }

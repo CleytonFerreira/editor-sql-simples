@@ -1,0 +1,82 @@
+<!doctype html>
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Editor SQL Simples</title>
+
+  </head>
+  <body onbeforeunload="return confirmarSaida()">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-md-2">
+          <div class="menu">
+            
+            <div class="logo-desktop"><img  class="img-fluid" src="img/logo_editor_sql.svg" alt="Editor SQL Simples"></div>
+
+            <div class="logo-mobile"><img  class="imagem"  src="img/logo_editor_sql_mobile.svg"></div>
+
+            <div class="iconbar">
+              <div class="icone"><a   id="btnLimpar"   onclick="teste()"  ><img class="imagem" src="img/limpar.svg" title="Limpar"></a></div> 
+              <div class="icone"><a   id="btnExecutar" onclick=""><img class="imagem" src="img/executar.svg" title="Executar"></a></div>
+              <div class="icone"><a   id="btnBaixar"   onclick=""><img class="imagem" src="img/baixar.svg" title="Baixar"></a> </div>
+            </div><!--iconbar-->
+            <div class="botao" data-toggle="collapse" data-target=".tabelas"><img id="btnTabela" class="imagem" src="img/botao_tabela.svg"></div>
+            </div><!--menu-->
+            <div class="tabelas collapse">
+              <ul>
+              <li>teste</li>
+              <li>teste</li>
+              <li>teste</li>
+              <li>teste</li>
+              <li>teste</li>
+              <li>teste</li>
+              <li>teste</li>
+            </ul>
+          </div><!--tabelas-->
+        </div><!--col-md-2-->
+
+
+        <div class="col-md-10">
+
+            <div class="fonte">
+            <form name="form">&nbsp;&nbsp;&nbsp;&nbsp;Fonte:
+              <select id="fonte" onchange="tamanhoFonte()">
+                <option value="12px">12px</option>
+                <option value="14px">14px</option>
+                <option selected value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+                <option value="28px">28px</option>
+                <option value="36px">36px</option>
+              </select>
+            </form>  
+          </div><!--fonte-->
+            
+          <div class="query">
+              <div id="editor"><!--As linhas de código são inseridas aqui, e podem ser capturadas pelo id da div(#editor)--></div>
+          </div>
+
+          <div class="resultado"></div>
+
+        </div><!--col-md-10--> 
+      </div><!--row no-gutters-->
+    </div><!--container-fluid p-0-->
+
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="scripts/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/script_editor.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
